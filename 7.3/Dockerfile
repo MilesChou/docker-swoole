@@ -1,8 +1,8 @@
-FROM php:5.5
+FROM php:7.3
 
 LABEL maintainer="MilesChou <jangconan@gmail.com>"
 
-ENV SWOOLE_VERSION=1.10.5
+ENV SWOOLE_VERSION=4.3.4
 
 RUN set -xe && \
         pecl install swoole-${SWOOLE_VERSION} && \
